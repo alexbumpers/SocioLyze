@@ -47,4 +47,7 @@ if __name__ == '__main__':
     stream = Stream(auth, l)
 
     # Streams tweets for only tweets from @FoxNews using Twitter user ID number
-    stream.filter(follow=['1367531'])
+    stream.filter(follow=input('''Please enter a Twitter user\'s ID number in the format ['1234567'], including the opening and closing brackets and quotes: '''))
+
+    """ Below is the previous stream via Twitter ID without input for reference. """
+    # stream.filter(follow=['1367531'])
