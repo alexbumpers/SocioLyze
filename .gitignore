@@ -3,5 +3,6 @@
 .DS_Store
 
 # Twitter access information #
-##############################
-keys.txt
+###############################
+keys.py
+keys.pyc
