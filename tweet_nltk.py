@@ -27,8 +27,15 @@ class Tweet_Print():
                         # Tokenize tweets
                         tokenized_tweets = nltk.word_tokenize(tweets)
                         print(tokenized_tweets)
+                        # 30-34 PSEUDO. Remove unnecessary items from tweets
+                        punctuation = ['!', '.', ',', '@', '&', '(', ')']
+                        for item in tokenized_tweets:
+                            if item not in punctuation:
+                                item.remove
                         # Write tweets to file, each on a new line
                         write_tweets = new.write(str(tokenized_tweets) + "\n")
+
+
                         print(write_tweets)
         # Converts tweets to format that may be manipulated by NLTK
         tweets_nltk = nltk.Text(tokenized_tweets)
